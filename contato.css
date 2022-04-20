@@ -1,0 +1,467 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: white;
+    color: #0a3665;
+    margin: 0;
+    font-family: 'Candara', 'Roboto', Helvetica, sans-serif;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+h1, h2
+{
+    margin: 0;
+}
+
+header h1
+{
+    font-size: 4rem;
+    user-select: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+
+header
+{
+    background-color: #0a3665;
+}
+
+#logo
+{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#logoImg
+{
+    padding-right: 10px;
+    pointer-events: none;
+    border-radius: 20px;
+}
+
+
+.menu
+{
+    background-color: #066ab2;
+    display: flex;
+    justify-content: center;
+}
+
+.menu a
+{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 16px;
+    transition: background-color 0,5s;
+}
+
+.menu a:hover
+{
+    background-color: #0a3665; 
+}
+
+.center
+{
+    margin: 30px;
+    font-size: 20px;
+}
+
+.alinhar
+{
+    text-align: left;
+}
+
+.grid
+{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.texto
+{
+    margin-top: 200px;
+    font-family: 'Dmsans',sans-serif;
+}
+
+#nome
+{
+    border-radius: 12px;
+    border-color: gray;
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    border-width: 2px;
+    background-color: #f7f6ff;
+    border: 2px solid transparent;
+    font-size: 16px;
+}
+
+#nome:focus
+{
+    border-color: #0a3665;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#email
+{
+    border-radius: 12px;
+    border-color: gray;
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    border-width: 2px;
+    background-color: #f7f6ff;
+    border: 2px solid transparent;
+    font-size: 16px;
+}
+
+#email:focus
+{
+    border-color: #0a3665;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+textarea
+{
+    resize: none;
+    background-color: #f7f6ff;
+    border-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    width: 500px;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    font-size: 16px;
+}
+
+textarea:focus
+{
+    border-color: #0a3665;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#textoCard
+{
+    padding: 20px;
+    font-size: 2em;
+}
+
+.botao
+{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 35px;
+	color: black;
+	cursor: pointer;
+	border: 2px solid #0a3665;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    box-shadow: -5px 30px 20px -20px rgb(86 93 113 / 38%);
+    border-radius: 12px;
+    font-size: 16px;
+}
+
+.botao:hover {
+	color: #fff;
+	background-color: #0a3665;
+	text-shadow: nthree;
+}
+
+.card
+{
+    margin: 40px;
+    border: 2px solid rgb(172, 171, 171);
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 50%) 15px 16px 20px, 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+}
+
+footer 
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px 10px 10px 0;
+}
+
+.rodape
+{
+    padding: 10px;
+}
+
+.social
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.social img
+{
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.social img:hover
+{
+    opacity: 0.5;
+}
+
+#direitos p
+{
+    text-align: right;
+    margin-bottom: 0;
+    padding: 5px;
+    color: white;
+    bottom: 50px;
+    right: 50px;
+}
+
+.separacao
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1000px)
+{
+    .texto
+    {
+        margin-top: 50px;
+    }
+ 
+    .grid
+    {
+        display:block;
+        width: 100%;
+        text-align: center;
+    }
+
+    #nome
+    {
+        width: 700px;
+        height: 50px;
+    }
+
+    #email
+    {
+        width: 700px;
+        height: 50px;
+    }
+
+    textarea
+    {
+        width: 700px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 900px)
+{
+    #nome
+    {
+        width: 550px;
+        height: 60px;
+    }
+
+    #email
+    {
+        width: 550px;
+        height: 60px;
+    }
+
+    textarea
+    {
+        width: 550px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) 
+{
+
+    header h1
+    {
+        font-size: 3rem; 
+    }
+
+    ul
+    {
+        width: 100%;
+       display: block;
+       padding-left: 0;
+    }
+
+    li
+    {
+        width: 100%;
+        display: block;
+        
+    }
+
+    .menu a
+    {
+        width: 100%;
+        display: block;
+    }
+
+   #logo
+   {
+       align-items: center;
+   }
+
+   #nome
+    {
+        width: 400px;
+        height: 60px;
+    }
+
+    #email
+    {
+        width: 400px;
+        height: 60px;
+    }
+
+    textarea
+    {
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 600px)
+{
+    #logo
+    {
+       width: 100%;
+       display: block;
+       padding-left: 0;
+      
+    }
+    
+
+    main
+    {
+        padding: 0;
+    }
+
+    #logoImg
+    {
+        width: 150px;
+        margin-left: -75px;
+        left: 50%;
+        position: relative;
+    }
+
+    body
+    {
+        padding: 0 !important;
+    }
+
+    #nome
+    {
+        width: 300px;
+        height: 60px;
+    }
+
+    #email
+    {
+        width: 300px;
+        height: 60px;
+    }
+
+    textarea
+    {
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 550px)
+{
+    #nome
+    {
+        width: 250px;
+        height: 70px;
+    }
+
+    #email
+    {
+        width: 250px;
+        height: 70px;
+    }
+
+    textarea
+    {
+        width: 250px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 450px)
+{
+    #nome
+    {
+        width: 200px;
+        height: 70px;
+    }
+
+    #email
+    {
+        width: 200px;
+        height: 70px;
+    }
+
+    textarea
+    {
+        width: 200px;
+        height: 400px;
+    }
+
+    .botao
+    {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    #nome
+    {
+        width: 100px;
+        height: 80px;
+    }
+
+    #email
+    {
+        width: 100px;
+        height: 80px;
+    }
+
+    textarea
+    {
+        width: 100px;
+        height: 500px;
+    }
+}

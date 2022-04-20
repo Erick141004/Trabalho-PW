@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> NBA - Sobre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@100 & display=swap" rel="stylesheet">
+        <link rel="icon" type="imagem/png" href="images/logoNBA.png">
+        <link href="sobre.css" rel="stylesheet">
+
+        <style>
+            body
+            {
+                background-color: white;
+                color: #0a3665;
+                margin: 0;
+                font-family: 'Candara', 'Roboto', Helvetica, sans-serif;
+            }
+            header h1
+            {
+                font-size: 5rem;
+                user-select: none;
+                color: rgb(255, 255, 255);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            header
+            {
+                background-color: #0a3665;
+            }
+
+            #logo
+            {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+            }
+
+            #logoImg
+            {
+                padding-right: 10px;
+                pointer-events: none; 
+                border-radius: 20px;
+                width: auto;
+            }
+            .menu
+            {   
+                background-color: #066ab2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .menu a
+            {
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                padding: 14px;
+                transition: background-color 0,5s;
+            }
+
+            .menu a:hover
+            {
+                background-color: #0a3665; 
+            }
+
+            @media screen and (max-width: 800px) 
+            {
+
+                header h1
+                {
+                    font-size: 3rem; 
+                }
+
+                ul
+                {
+                    width: 100%;
+                display: block;
+                }
+
+                li
+                {
+                    width: 100%;
+                    display: block;
+                    
+                }
+
+                .menu a
+                {
+                    width: 100%;
+                    display: block;
+                }
+
+                #logo
+                {
+                    align-items: center;
+                }
+
+            }
+
+            @media screen and (max-width: 600px)
+            {
+                #logoImg
+                { 
+                    width: 150px;
+                    margin-left: -75px;
+                    left: 50%;
+                    position: relative;
+                } 
+                #logo
+                {
+                    width: 100%;
+                    display: block;
+                    padding-left: 0;
+                }
+
+                body
+                {
+                    padding: 0;
+                }
+            }
+
+           .alinhatexto
+            {
+                padding-right: 15px;
+                padding-left: 15px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            @media (min-width: 768px) 
+            {
+                .alinhatexto
+                {
+                width: 750px;
+                }
+            }
+            @media (min-width: 992px) 
+            {
+                .alinhatexto 
+                {
+                width: 970px;
+                }
+            }
+            @media (min-width: 1200px) 
+            {
+                .alinhatexto
+                {
+                width: 1170px;
+                }
+            }
+
+            .row 
+            {
+                margin-right: -15px;
+                margin-left: -15px;
+            }
+
+            .divisao
+            {
+                position: relative;
+                min-height: 1px;
+                padding-right: 15px;
+                padding-left: 15px;
+                width: 100%;
+                font-size: 20px;
+            }
+
+            .caption 
+            {
+                padding-top: 8px;
+                padding-bottom: 8px;
+                color: #0a3665;
+                text-align: left;
+                font-size: 20px;
+            }
+
+
+            .thumbnail > img
+            {
+                justify-content: center;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .text-left 
+            {
+                text-align: left;
+            }
+
+            .text-right {
+                text-align: right;
+            }
+
+            .text-center {
+                text-align: center;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img id="logoImg" src="images/logoNBA.png">
+                <h1 id="logoTitulo"> Loja da NBA </h1>
+            </div>
+            <div class="menu">
+                <ul>
+                   <li> <a href="index.html"> INÍCIO </a> </li>
+                   <li> <a href="index.html#produtos"> PRODUTOS </a> </li> 
+                   <li> <a href="index.html#regatas"> REGATAS </a> </li> 
+                   <li> <a href="index.html#bolas"> BOLAS </a> </li> 
+                   <li> <a href="index.html#tenis"> TÊNIS </a> </li> 
+                   <li> <a href="index.html#promocoes"> PROMOÇÕES </a> </li> 
+                   <li> <a href="sobre.html"> SOBRE </a> </li> 
+                   <li> <a href="contato.html"> CONTATO </a> </li> 
+                </ul>
+            </div>
+        </header>
+        <main class="tracking-in-expand">
+            <section class="header-site">
+                <div class="alinhatexto">
+                    <div class="row">
+                        <div class="divisao">
+                                <h1 class=" text-left"> UM POUCO SOBRE NÓS</h1>
+                                    <p class="text-left"> Lorem ipsum dolor sit amet, 
+                                        <br> consectetur adipiscing elit. 
+                                        <br> Fusce sit amet blandit odio.  </p>
+                    
+                            <p class="text-left"> Curabitur justo felis, ullamcorper ac hendrerit id, eleifend vel ipsum. </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="content-site">
+                <div class="alinhatexto">
+                    <div class="row">
+                        <div class="divisao">
+                            <h1 class="caption, text-center">  POR QUE CRIAR ESSA LOJA? </h1>
+                            <p class="caption, text-left"> Ut interdum vehicula risus. Praesent maximus dictum consequat. Etiam facilisis sed est vitae ullamcorper. Donec mi mi, porta a mollis et, feugiat tempor erat.  </p>
+                        `   <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="divisao">
+                                <div class="caption text-center thumbnail">
+                                    <h3>QUAL É O NOSSO OBJETIVO?  </h3>
+                                    <p>Integer rhoncus odio varius tellus consectetur aliquet. 
+                                    <br> Praesent non justo vitae turpis maximus lobortis.
+                                    <br> vitae. Aliquam et sodales odio.  </p>
+                                    <img src="images/fotojogadores.jpeg">
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="divisao">
+                                <div class="caption text-left">
+                                    <h3>Duis ligula mauris, mattis quis <br> egestas tristique,  </h3>
+                                    <p>Vestibulum ullamcorper lorem sit amet pretium fringilla. <br> 
+                                        Curabitur feugiat imperdiet est, id viverra lectus accumsan
+                                        <br> vitae. Aliquam et sodales odio.  </p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="divisao">
+                                <div class="caption text-right">
+                                    <h3> Pellentesque sed pharetra dolor. <br> egestas tristique,  </h3>
+                                    <p> Mauris et consectetur urna. Quisque mattis dui et libero vestibulum, 
+                                    <br> non ultrices enim tristique. Nulla accumsan, ipsum pharetra tempor maximus, 
+                                    <br> nunc nulla malesuada lectus, ullamcorper iaculis arcu ligula eget ipsum. </p>
+                                </div>        
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="img-site">
+                <div class="alinhatexto">
+                    <div class="row">
+                        <div class="divisao">
+                            <h1 class="text-center"> A MELHOR LOJA QUE VOCÊ VAI VER</h1>  
+                            <p class="text-center"> Vivamus venenatis placerat auctor. Nunc mattis mollis sagittis. Mauris porta mi eget <br> ipsum accumsan ullamcorper. Vestibulum sagittis tristique posuere. </p>
+                        </div>   
+                    </div>   
+                </div>
+            </section>
+        </main>
+        <footer id="contato">
+            <div class="separacao">
+                <div class="rodape">
+                    <h2> Informacoes para contato: </h2>
+                    <p> Tel: (11) 91111-1111 </p>
+                    <p> Email: nbalojaoficial@gmail.com</p>
+                </div>
+                <div class="social"> 
+                    <div>
+                        <h2>Siga as nossas redes sociais:</h2>
+                        <a target="_blank" href="https://pt-br.facebook.com/NBABrasil/"> 
+                            <img src="images/fb.png">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/nbabrasil/?hl=pt-br">
+                            <img src="images/ig.png">
+                        </a>
+                        <a target="_blank" href="https://twitter.com/NBABrasil?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                            <img src="images/tw.png">
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCsiCOcr5SZAWlJMfcw9P__w">
+                            <img src="images/yt.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="direitos">
+                <p> Todos os Direitos sao reservados para NBA. &copy; Copyright 2022 </p>
+            </div>
+        </footer>
+    </body>
+</html>

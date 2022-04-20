@@ -1,0 +1,151 @@
+*
+{
+    box-sizing: border-box;
+}
+
+
+
+h1, h2
+{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
+
+
+footer 
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px 10px 10px 0;
+}
+
+.rodape
+{
+    padding: 10px;
+
+}
+
+.social
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+.social img
+{
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.social img:hover
+{
+    opacity: 0.5;
+}
+
+#direitos p
+{
+    text-align: right;
+    margin-bottom: 0;
+    padding: 5px;
+    color: white;
+    bottom: 50px;
+    right: 50px;
+}
+
+.separacao
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div .foto img
+{
+    width: 200px;
+    height: 100px;
+}
+
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+  .header-site
+  {
+      background-image: url('images/lebron-enterrada.jpg');
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      color: white;
+      padding-top: 300px;
+      padding-bottom: 300px;
+  }
+  
+  .content-site
+  {
+      padding-top: 75px;
+      padding-bottom: 75px;
+  }
+  
+  .img-site{
+      background-image: url('images/homenagem.jpg');
+      background-position: center top;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      padding-top: 200px;
+      padding-bottom: 200px;
+  }
+  
+
